@@ -1,108 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link rel="icon" href="https://imgur.com/QLgvTsC.png" type="image/x-icon">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUTTAO OFICIAL</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="https://imgur.com/QLgvTsC.png" alt="Logo Guttao Records" class="logo">
-    <h1></h1>
-  </header>
-
-  <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GUTTAO</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://imgur.com/QLgvTsC.png" type="image/x-icon">
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #000000;
-      background-color: #000000;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #000;
       color: #C0C0C0;
       text-align: center;
       padding: 40px 20px;
     }
+
+    header .logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
     .card {
       background-color: #000;
-      border:1px solid #C0C0C0;
+      border: 1px solid #C0C0C0;
       border-radius: 12px;
       padding: 20px;
       max-width: 500px;
       margin: auto;
       box-shadow: 0 4px 12px rgba(192,192,192,0.2);
-      color: #C0C0C0;
       transition: transform 0.3s ease;
     }
-    
-.card:hover {
-  transform: translateY(-4px);
-}
-h1 {
-  font-size: 2.8em;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  color: #C0C0C0; 
-}
+    .card:hover { transform: translateY(-4px); }
 
-.tagline {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  color: #C0C0C0;
-}
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border: 3px solid #C0C0C0;
-}
+    .tagline {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #444; 
-}
+    a.button {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 20px;
+      background-color: #C0C0C0;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      width: 80%;
+      max-width: 300px;
+      transition: background 0.3s;
+    }
+    a.button:hover { background-color: #A9A9A9; }
 
-a.button {
-  display: block;
-  margin: 10px auto;
-  padding: 12px 20px;
-  background-color: #C0C0C0;
-  color: #000;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  width: 80%;
-  max-width: 300px;
-  transition: background 0.3s;
-}
+    /* Player de música */
+    .music-player {
+      background-color: #111;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    }
+    .music-player img.cover {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .music-player h2 {
+      margin: 10px 0;
+      color: #C0C0C0;
+    }
+    .music-player p {
+      margin: 5px 0 15px;
+      color: #aaa;
+    }
+    .music-player audio {
+      width: 100%;
+      margin: 15px 0;
+    }
+    .btn-single {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff90e8;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
 
-a.button:hover {
-  background-color: #A9A9A9;
-}
-
+    /* Botão WhatsApp fixo */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
     }
   </style>
 </head>
-<body> 
-  <div class="card">
+<body>
+  <header>
+    <img src="https://imgur.com/QLgvTsC.png" alt="Logo Guttao Records" class="logo">
     <h1>GUTTAO</h1>
     <div class="tagline">OFICIAL</div>
-    
-    <p></p>
+  </header>
+
+  <div class="card">
     <a href="https://guttaorecords.com" class="button" target="_blank">🌐 Site Oficial</a>
     <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">Linkedin</a> 
     <a href="https://www.tiktok.com/@guttaomusic" class="button" target="_blank">Tik Tok</a>
@@ -113,138 +131,42 @@ a.button:hover {
     <a href="https://open.spotify.com/intl-pt/artist/0NDTkAG2eBpLyDdYmYJu1s?si=YK7hmWg5Ssya9X5FmVsiGw" class="button" target="_blank">Spotify</a>
     <a href="mailto:guttaostarmaker@gmail.com" class="button">Guttao Gmail</a>  
   </div> 
-</body>
 
-  <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Minha Música Exclusiva</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-    }
-    img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    audio {
-      width: 100%;
-      margin-top: 20px;
-    }
-    iframe {
-      width: 100%;
-      height: 315px;
-      margin-top: 20px;
-      border: none;
-      border-radius: 10px;
-    }
-    .gumroad-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #ff90e8;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .bonus {
-      margin-top: 30px;
-      background-color: #222;
-      padding: 20px;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-<body>
-  </a>
-  </section>
-  <section id="servicos">
-    <h2>
-    <div class="servico">
-      <h3>Composições e letras</h3>
-            <a href="https://www.guttaorecords.com/booking-calendar/composi%C3%A7%C3%B5es-e-letras" target="_blank">Agendar</a>
-    </div>
-       </div>
-      <div class="servico">
-      <h3>Design de produtos</h3>
-     <a href="https://www.guttaorecords.com/service-page/design-de-produtos" target="_blank">Solicitar orçamento</a>
-    </div>
-      
-       </div>
-       <h3>MÚSICAS AUTORAIS</h3>
-      
-      </div>
-      <html>
-
-<!-- Bloco do player de música -->   
-<div class="music-player">
-  <img src="Imagem do WhatsApp de 2025-08-31 à(s) 23.19.54_0537ab7b.jpg" alt="Meu filho e minha filha" class="cover">
-  <div class="info">
-   <h2 style="color: black;">MEU FILHO E MINHA FILHA</h2>
-      <p>GUTTÃO</p>
+  <!-- Players de música -->
+  <div class="music-player">
+    <img src="Imagem do WhatsApp de 2025-08-31 à(s) 23.19.54_0537ab7b.jpg" alt="Meu filho e minha filha" class="cover">
+    <h2>MEU FILHO E MINHA FILHA</h2>
+    <p>GUTTÃO</p>
     <audio controls>
       <source src="Meu filho e minha filha.mp3" type="audio/mpeg">
       Seu navegador não suporta áudio.
     </audio>
     <a href="https://guttao.bandcamp.com/track/meu-filho-e-minha-filha" class="btn-single">Obtenha o single</a>
   </div>
-   </div>
-<!-- Bloco do player de música -->   
-<div class="music-player">
-  <img src="Imagem do WhatsApp de 2025-09-06 à(s) 15.20.09_3d91af57.jpg" alt="Meu filho e minha filha" class="cover">
-  <div class="info">
-   <h2 style="color: black;">CELEIRO DE SONHADOR</h2>
-      <p>GUTTÃO</p>
+
+  <div class="music-player">
+    <img src="Imagem do WhatsApp de 2025-09-06 à(s) 15.20.09_3d91af57.jpg" alt="Celeiro de Sonhador" class="cover">
+    <h2>CELEIRO DE SONHADOR</h2>
+    <p>GUTTÃO</p>
     <audio controls>
       <source src="Guto Ramos Fernandes - CELEIRO DE SONHADOR - Remasterizada.m4a" type="audio/mpeg">
       Seu navegador não suporta áudio.
     </audio>
     <a href="https://guttao.bandcamp.com/track/celeiro-de-sonhador" class="btn-single">Obtenha o single</a>
   </div>
-   </div>
-<!-- Bloco do player de música -->   
-<div class="music-player">
-  <img src="QUE SE ESTRUMBIQUE.jpeg" alt="Meu filho e minha filha" class="cover">
-  <div class="info">
-   <h2 style="color: black;">QUE SE ESTRUMBIQUE</h2>
-      <p>GUTTÃO</p>
+
+  <div class="music-player">
+    <img src="QUE SE ESTRUMBIQUE.jpeg" alt="Que se Estrumbique" class="cover">
+    <h2>QUE SE ESTRUMBIQUE</h2>
+    <p>GUTTÃO</p>
     <audio controls>
       <source src="QUE SE ESTRUMBIQUE - M4A.m4a" type="audio/mpeg">
       Seu navegador não suporta áudio.
     </audio>
     <a href="https://guttao.bandcamp.com/track/que-se-estrumbique" class="btn-single">Obtenha o single</a>
   </div>
-   
-  </div>
-     <!-- Botão de WhatsApp -->
-<a href="https://wa.me/5541995721834" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50px;
-  padding: 12px 20px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  z-index: 1000;
-">Whatsapp 
-   
 
-</div>
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">Whatsapp</a>
 </body>
 </html>
-
-  
