@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--
-**guttao-records/guttao-records** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**guttao/guttao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
