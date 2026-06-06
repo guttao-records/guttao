@@ -192,6 +192,90 @@
 </section>
    <div class="servico">
        <h3>MUSICAS</h3>
+     <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Vitrola Interativa</title>
+<style>
+body {
+  background-color: #111;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.vitrola {
+  background: #3b2f2f;
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.disco {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: radial-gradient(circle, #222 40%, #000 100%);
+  border: 6px solid #444;
+  animation: girar 4s linear infinite;
+  position: relative;
+}
+
+.disco::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: #c00;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.botao {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao.youtube { background: #c4302b; }
+.botao.spotify { background: #1db954; }
+.botao.soundcloud { background: #ff7700; }
+
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="vitrola">
+  <h2>Vitrola Interativa 🎶</h2>
+  <div class="disco"></div>
+  <a href="https://youtube.com/watch?v=H6cohwTrfgM" target="_blank" class="botao youtube">Born to Ride</a>
+  <a href="https://open.spotify.com/intl-pt/track/64Us7Aqp3p7z68L2kFqBkd?si=170e6dc29890468c" target="_blank" class="botao spotify">Meu filho e minha filha</a>
+  <a href="https://soundcloud.com/guttaoautoral/no-ar?si=9a7170c8d19a4656b080cdf1b1e61aac&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="botao soundcloud">Asphalt Cowboy</a>
+</div>
+
+</body>
+</html>
 <!-- Players de música -->
      <!-- Botão WhatsApp -->
 <a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
