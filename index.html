@@ -3,66 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guttao</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Favicons em diferentes tamanhos -->
- <link rel="icon" type="image/png" sizes="96x96" href="https://imgur.com/6JqOxRO.png">
-<link rel="icon" type="image/png" sizes="180x180" href="https://imgur.com/6JqOxRO.png">
-<link rel="icon" type="image/png" sizes="512x512" href="https://imgur.com/6JqOxRO.png">
-</head>
-   </body>
-</html>
-<!DOCTYPE html>
-<h1 class="guttao-title">GUTTAO</h1>
-
-<style>
-.guttao-title {
-  font-size: 120px;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff; /* branco */
-  -webkit-text-stroke: 3px #000000; /* contorno preto */
-  text-shadow: 2px 2px 8px #000000; /* sombra preta para profundidade */
-  margin-top: 100px;
-}
-</style>  
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Guttao</title>
-  <style>
-    .corda-frame {
-      display: inline-block;
-      padding: 20px;
-      border: 30px solid transparent;
-      border-image: url('corda.png') 30 round; /* moldura da corda */
-      border-radius: 50%; /* deixa a moldura circular */
-    }
-    .corda-frame img {
-      width: 200px;        /* tamanho da foto */
-      height: 200px;       /* altura igual à largura */
-      border-radius: 50%;  /* transforma em círculo */
-      object-fit: cover;   /* preenche sem distorcer */
-      object-position: center; /* centraliza o rosto */
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <div class="corda-frame">
-    <img src="https://imgur.com/QLgvTsC.png" alt="Foto circular do Guttao">
-  </div>
-</body>
-</html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUTTAO</title>
-  <link rel="" href="" type="">
+  <link rel="icon" type="image/png" href="https://i.imgur.com/6JqOxRO.png">
   <style>
-     body  {
+    body {
       margin: 0;
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #000;
@@ -70,36 +14,38 @@
       text-align: center;
       padding: 40px 20px;
     }
-
-    header .logo {
-      width: 80px;
-      margin-bottom: 20px;
+    h1.guttao-title {
+      font-size: 120px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      -webkit-text-stroke: 3px #000;
+      text-shadow: 2px 2px 8px #000;
+      margin-top: 50px;
     }
-
+    .corda-frame {
+      display: inline-block;
+      padding: 20px;
+      border: 30px solid transparent;
+      border-image: url('corda.png') 30 round;
+      border-radius: 50%;
+      margin: 20px auto;
+    }
+    .corda-frame img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
     .card {
       background-color: #000;
       border: 1px solid #C0C0C0;
       border-radius: 12px;
       padding: 20px;
       max-width: 500px;
-      margin: auto;
+      margin: 20px auto;
       box-shadow: 0 4px 12px rgba(192,192,192,0.2);
-      transition: transform 0.3s ease;
     }
-    .card:hover { transform: translateY(-4px); }
-
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-
-    .tagline {
-      font-size: 1.4em;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
     a.button {
       display: block;
       margin: 10px auto;
@@ -109,119 +55,40 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      width: 80%;
       max-width: 300px;
-      transition: background 0.3s;
     }
     a.button:hover { background-color: #A9A9A9; }
-
-    /* Player de música */
-    .music-player {
-      background-color: #111;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 30px auto;
-      max-width: 600px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
-    }
-    .music-player img.cover {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    .music-player h2 {
-      margin: 10px 0;
-      color: #C0C0C0;
-    }
-    .music-player p {
-      margin: 5px 0 15px;
-      color: #aaa;
-    }
-    .music-player audio {
-      width: 100%;
-      margin: 15px 0;
-    }
-    .btn-single {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #ff90e8;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    /* Botão WhatsApp fixo */
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50px;
-      padding: 12px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      width: 60px;
+      height: 60px;
       z-index: 1000;
     }
+    .whatsapp-btn img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
 <body>
-  <header>
-    <img src="" alt="" class="">
-    <h1></h1>
-    <div class="tagline"></div>
-  </header>
+  <h1 class="guttao-title">GUTTAO</h1>
+  <div class="corda-frame">
+    <img src="https://i.imgur.com/QLgvTsC.png" alt="Foto circular do Guttao">
+  </div>
   <div class="card">
     <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">LINKEDIN</a> 
     <a href="https://www.tiktok.com/@guttaomusic" class="button" target="_blank">TIKTOK</a>
     <a href="https://www.facebook.com/guttaomusic/" class="button" target="_blank">FACEBOOK</a>
     <a href="https://www.youtube.com/channel/UCSXjdRQv5fuhqamdJq_S1LQ" class="button" target="_blank">YOUTUBE</a>
-    <a href="https://open.spotify.com/intl-pt/artist/0NDTkAG2eBpLyDdYmYJu1s?si=YK7hmWg5Ssya9X5FmVsiGw" class="button" target="_blank">SPOTIFY</a>
+    <a href="https://open.spotify.com/artist/0NDTkAG2eBpLyDdYmYJu1s" class="button" target="_blank">SPOTIFY</a>
     <a href="mailto:guttaostarmaker@gmail.com" class="button">GMAIL</a>  
-  </div> 
-  <div class="servico">
-       <h3>DESIGN DE PRODUTOS</h3>
-    <a href="https://www.guttaorecords.com/service-page/design-de-produtos" target="_blank">Solicitar orçamento</a>
   </div>
-  </section>
-   <div class="servico">
-       <h3>MUSICAS</h3>
-     </body>
-</html>
-<!-- Players de música -->
-     <!-- Botão WhatsApp -->
-<a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-</a>
-<!-- CSS -->
-<style>
-.whatsapp-btn {
-  position: fixed;   /* Fica fixo na tela */
-  bottom: 20px;      /* Distância da parte de baixo */
-  right: 20px;       /* Distância da lateral direita */
-  width: 60px;       /* Largura do botão */
-  height: 60px;      /* Altura do botão */
-  z-index: 1000;     /* Garante que fique por cima */
-}
-.whatsapp-btn img {
-  width: 100%;
-  height: 100%;
-}
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHQX2897VP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-MHQX2897VP');
-</script>
-</head>
-  <link rel="apple-touch-icon" href="/favicon.png">
-<body>
-  <h1></h1>
+  <a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
   <p>GitHub Pages / Google Analytics.</p>
   <p>Guttao 2026</p>
 </body>
-</html     
+</html>
