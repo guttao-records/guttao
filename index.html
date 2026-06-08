@@ -3,84 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GUTTAO RECORDS</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <img src="emblema caveira guttao records - camiseta preta.svg" alt="Logo Guttao Records" class="logo">
-    <h1></h1>
-  </header>
-
-  <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GUTTAO</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="https://i.imgur.com/6JqOxRO.png">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #000;
+      color: #C0C0C0;
       text-align: center;
       padding: 40px 20px;
+    h1.guttao-title {
+  font-size: 10vw; /* proporcional à largura da tela */
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: 0.2vw #000;
+  text-shadow: 2px 2px 8px #000;
+  margin: 20px 0 10px 0; /* reduzido para ficar perto da foto */
+}
+    .corda-frame {
+      display: inline-block;
+      padding: 20px;
+      border: 30px solid transparent;
+      border-image: url('corda.png') 30 round;
+      border-radius: 50%;
+      margin: 20px auto;
     }
-    .card {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 30px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-    }
-    .tagline {
-      font-size: 1.1em;
-      color: #00ffff;
-      margin-bottom: 20px;
-    }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
+    .corda-frame img {
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
-      border: 3px solid #00ffff;
     }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 20px;
+    .card {
+      background-color: #000;
+      border: 1px solid #C0C0C0;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 4px 12px rgba(192,192,192,0.2);
     }
     a.button {
       display: block;
       margin: 10px auto;
       padding: 12px 20px;
-      background-color: #00ffff;
+      background-color: #C0C0C0;
       color: #000;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      width: 80%;
       max-width: 300px;
-      transition: background 0.3s;
     }
-    a.button:hover {
-      background-color: #00cccc;
+    a.button:hover { background-color: #A9A9A9; }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+    }
+    .whatsapp-btn img {
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
+  <h1 class="guttao-title">GUTTAO</h1>
+  <div class="corda-frame">
+    <img src="https://i.imgur.com/QLgvTsC.png" alt="Foto circular do Guttao">
+  </div>
   <div class="card">
-    <h1>GUTTAO</h1>
-    <div class="tagline">OFICIAL</div>
-    <img src="https://i.imgur.com/ieVigoR.png" alt="Foto de Guto" class="profile-pic">
+    <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">LINKEDIN</a> 
+    <a href="https://www.tiktok.com/@guttaomusic" class="button" target="_blank">TIKTOK</a>
+    <a href="https://www.facebook.com/guttaomusic/" class="button" target="_blank">FACEBOOK</a>
+    <a href="https://www.youtube.com/@Guttaomusic" class="button" target="_blank">YOUTUBE</a>
+    <a href="https://open.spotify.com/artist/0NDTkAG2eBpLyDdYmYJu1s" class="button" target="_blank">SPOTIFY</a>
+    <a href="mailto:guttaostarmaker@gmail.com" class="button">GMAIL</a>  
+  </div>
+   <!-- Botão de inscrição do YouTube -->
+<script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" 
+     data-channelid="UCwvHZVNbFUBwYUAE1zny_-g" 
+     data-layout="full" 
+     data-count="default">
+       </div>
+   <body>
+    <a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+  <p></p>
+  <p></p>
+</body>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Áudio</title>
+</head>
+<body>
+  <h1>Meu filho e minha filha</h1>
+  
+  <!-- Player com controles -->
+  <audio controls>
+    <source src="Meu filho e minha filha.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Áudio</title>
+</head>
+<body>
+  <h1>Celeiro de sonhador</h1>
+  
+  <!-- Player com controles -->
+  <audio controls>
+    <source src="Guto Ramos Fernandes - CELEIRO DE SONHADOR - Remasterizada.m4a" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Áudio</title>
+</head>
+<body>
+  <h1>Back for the Thrill</h1>
+  
+  <!-- Player com controles -->
+  <audio controls>
+    <source src="back for the thrill(2).mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
     <p></p>
     <a href="https://guttaorecords.com" class="button" target="_blank">🌐 Site Oficial</a>
     <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">Linkedin</a> 
@@ -127,6 +186,8 @@
 </a>
   </body>
 
+  <p>Guttao 2026</p>
+</body>
 </html>
-
-  
+</body></html>
+</html>
