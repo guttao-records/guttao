@@ -131,6 +131,24 @@
   text-align: center;
   margin: 5px;
 }
+  body {
+  background: linear-gradient(180deg, 
+              #000 0%, 
+              #111 50%, 
+              #000 100%);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, rgba(255,255,0,0.15), transparent 70%);
+  z-index: -1; /* fica atrás do conteúdo */
+}
 }
   </style>
 </head>
