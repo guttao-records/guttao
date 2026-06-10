@@ -10,33 +10,39 @@
       margin: 0;
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #000;
-      color: #C8C0C8;
+      color: #C0C0C0;
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
     }
-    .container {
+    .topo {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px; /* espaço uniforme entre os elementos */
+      gap: 10px; /* espaço pequeno entre título e foto */
     }
     h1.guttao-title {
-      font-size: 200px;   /* título bem grande */
+      font-size: 12vw;   /* responsivo: ocupa 12% da largura da tela */
       font-weight: bold;
       color: #fff;
-      -webkit-text-stroke: 4px #000;
-      text-shadow: 4px 4px 12px #000;
-      margin: 0; /* remove margem extra */
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 2px 2px 8px #000;
+      margin: 0;
+    }
+    @media (max-width: 480px) {
+      h1.guttao-title {
+        font-size: 16vw; /* aumenta proporcionalmente em celulares */
+        -webkit-text-stroke: 1px #000;
+      }
     }
     .corda-frame {
-      padding: 20px;
-      border: 30px solid transparent;
+      padding: 10px;
+      border: 20px solid transparent;
       border-image: url('corda.png') 30 round;
       border-radius: 50%;
     }
     .corda-frame img {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
     }
@@ -45,7 +51,8 @@
       border: 1px solid #C0C0C0;
       border-radius: 12px;
       padding: 20px;
-      max-width: 500px;
+      max-width: 400px;
+      margin: 20px auto;
       box-shadow: 0 4px 12px rgba(192,192,192,0.2);
     }
     a.button {
@@ -57,15 +64,15 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      max-width: 300px;
+      max-width: 250px;
     }
     a.button:hover { background-color: #A9A9A9; }
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       z-index: 1000;
     }
     .whatsapp-btn img {
@@ -75,24 +82,22 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Título principal -->
+  <!-- Título e foto juntos -->
+  <div class="topo">
     <h1 class="guttao-title">GUTTAO</h1>
-
-    <!-- Foto circular com moldura -->
     <div class="corda-frame">
       <img src="https://i.imgur.com/QLgvTsC.png" alt="Foto circular do Guttao">
     </div>
+  </div>
 
-    <!-- Links sociais -->
-    <div class="card">
-      <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">LINKEDIN</a> 
-      <a href="https://www.tiktok.com/@guttaomusic" class="button" target="_blank">TIKTOK</a>
-      <a href="https://www.facebook.com/guttaomusic/" class="button" target="_blank">FACEBOOK</a>
-      <a href="https://www.youtube.com/@Guttaomusic" class="button" target="_blank">YOUTUBE</a>
-      <a href="https://open.spotify.com/artist/0NDTkAG2eBpLyDdYmYJu1s" class="button" target="_blank">SPOTIFY</a>
-      <a href="mailto:guttaostarmaker@gmail.com" class="button">GMAIL</a>  
-    </div>
+  <!-- Links sociais -->
+  <div class="card">
+    <a href="https://www.linkedin.com/in/gutoramosfernandes/" class="button">LINKEDIN</a> 
+    <a href="https://www.tiktok.com/@guttaomusic" class="button" target="_blank">TIKTOK</a>
+    <a href="https://www.facebook.com/guttaomusic/" class="button" target="_blank">FACEBOOK</a>
+    <a href="https://www.youtube.com/@Guttaomusic" class="button" target="_blank">YOUTUBE</a>
+    <a href="https://open.spotify.com/artist/0NDTkAG2eBpLyDdYmYJu1s" class="button" target="_blank">SPOTIFY</a>
+    <a href="mailto:guttaostarmaker@gmail.com" class="button">GMAIL</a>  
   </div>
 
   <!-- Botão WhatsApp -->
@@ -102,13 +107,12 @@
 
   <!-- Seção de músicas -->
   <h1>MÚSICAS:</h1>
-  <iframe width="640" height="360" 
+  <iframe width="100%" height="250" 
     src="https://www.youtube.com/embed/videoseries?list=PLAwMNaah2is3xRG2p1bKp8U7eu_xy6D7r&autoplay=1&loop=1" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
     encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
 
-  <!-- Players de áudio -->
   <h2>Meu filho e minha filha</h2>
   <audio controls>
     <source src="Meu filho e minha filha.mp3" type="audio/mpeg">
