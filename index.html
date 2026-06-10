@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
+      background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
       color: #fff;
       text-align: center;
     }
@@ -24,18 +24,12 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .main {
-      padding: 100px 20px;
+    .hero {
+      padding: 80px 20px;
     }
-    .main h1 {
-      font-size: 60px;
-      margin: 0;
-    }
-    .main p {
-      color: orange;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+    .artista { color: yellow; font-size: 28px; margin: 0; }
+    .guttao { color: white; font-size: 120px; margin: 20px 0; font-weight: bold; }
+    .tagline { color: #ccc; font-size: 22px; margin: 0; }
     .btn {
       background-color: orange;
       color: #000;
@@ -44,227 +38,90 @@
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      display: inline-block;
     }
     footer {
       padding: 20px;
       background-color: #000;
-      font-size: 14px;
     }
-  .hero {
-  text-align: center;          /* centraliza tudo */
-  padding: 100px 20px;
-  background-color: #000;      /* fundo preto */
-}
-
-.artista {
-  color: yellow;               /* ARTISTA em amarelo */
-  font-size: 28px;
-  margin: 0;
-}
-
-.guttao {
-  color: white;                /* GUTTAO em branco */
-  font-size: 140px;            /* bem maior */
-  margin: 20px 0;
-  font-weight: bold;
-}
-
-.tagline {
-  color: #ccc;                 /* tagline em cinza */
-  font-size: 22px;
-  margin: 0;
-}
-    /* Estilo padrão (desktop) */
-.guttao {
-  font-size: 140px;
-}
-
-.artista {
-  font-size: 28px;
-}
-
-.tagline {
-  font-size: 22px;
-}
-
-/* Ajuste para tablets */
-@media (max-width: 992px) {
-  .guttao {
-    font-size: 90px;
-  }
-  .artista {
-    font-size: 22px;
-  }
-  .tagline {
-    font-size: 18px;
-  }
-}
-
-/* Ajuste para celulares */
-@media (max-width: 576px) {
-  .guttao {
-    font-size: 60px;   /* título menor para caber */
-  }
-  .artista {
-    font-size: 18px;
-  }
-  .tagline {
-    font-size: 16px;
-  }
-  .social-links {
-    flex-direction: column; /* links em coluna no celular */
-    gap: 10px;
-  }
-  .whatsapp-btn {
-    width: 100%;            /* botão ocupa largura inteira */
-    text-align: center;
-  }
-  .main {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* permite quebrar linha */
-}
-
-.btn {
-  flex: 1 1 200px; /* ocupa largura mínima de 200px */
-  text-align: center;
-  margin: 5px;
-}
-  body {
-  background: linear-gradient(180deg, 
-              #000 0%, 
-              #111 50%, 
-              #000 100%);
-}
-
-.hero {
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle, rgba(255,255,0,0.15), transparent 70%);
-  z-index: -1; /* fica atrás do conteúdo */
-}
-  body {
-  background: radial-gradient(circle at center, 
-              rgba(255, 255, 0, 0.2),   /* amarelo suave */
-              rgba(0, 0, 0, 1));        /* preto sólido */
-}
-}
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#">GUTTAO</a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </nav>
-    <a href="#" style="color:orange;">ADMIN</a>
-  </header>
-<section class="hero">
-  <div class="left-text">
-    <p class="artista">ARTISTA</p>
-         </div>
-    <h1 class="guttao">GUTTAO</h1>
-  </div>
-  <p class="tagline">TEST tagline 2026</p>
-   </section>
-     <section class="main">
-     <a href="#" class="btn">OUVIR AS MÚSICAS →</a>
-       </div>
-    <a href="https://open.spotify.com/intl-pt/artist/0NDTkAG2eBpLyDdYmYJu1s?si=VotISo-aTyOQ1XY2vfe09Q" class="btn">SPOTIFY</a>
-  </section>
-<footer>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/gutoramosfernandes">LinkedIn</a>
-    <a href="https://www.youtube.com/@Guttaomusic">YouTube</a>
-    <a href="https://www.facebook.com/guttaomusic">Facebook</a>
-    <a href="https://www.tiktok.com/@guttaomusic">TikTok</a>
-    <a href="mailto:guttaostarmaker@gmail.com">Gmail</a>
-  </div>
-      </footer>
-  <head>
-  <style>
-    footer {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-
     .social-links a {
       color: white;
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
     }
-
-    .social-links a:hover {
-      color: orange;
+    .social-links a:hover { color: orange; }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 50px;
+      gap: 10px;
+      transition: 0.3s;
     }
-    css
-.whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  background-color: #25D366;   /* verde oficial do WhatsApp */
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 50px;         /* deixa arredondado tipo balão */
-  gap: 10px;                   /* espaço entre ícone e texto */
-  transition: 0.3s;
-}
-
-.whatsapp-btn img {
-  width: 24px;
-  height: 24px;
-}
-
-.whatsapp-btn:hover {
-  background-color: #128C7E;   /* verde mais escuro no hover */
-}
+    .whatsapp-btn img { width: 24px; height: 24px; }
+    .whatsapp-btn:hover { background-color: #128C7E; }
   </style>
 </head>
-  </body>
-         <!-- Seção de músicas -->
-  <h1></h1>
-  <iframe width="100%" height="350" 
-    src="https://www.youtube.com/embed/videoseries?list=PLAwMNaah2is3xRG2p1bKp8U7eu_xy6D7r&autoplay=1&loop=1" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<body>
+  <header>
+    <nav>
+      <a href="#">GUTTAO</a>
+    </nav>
+    <a href="#" style="color:orange;">ADMIN</a>
+  </header>
+
+  <section class="hero">
+    <p class="artista">ARTISTA</p>
+    <h1 class="guttao">GUTTAO</h1>
+    <p class="tagline">TEST tagline 2026</p>
+  </section>
+
+  <section class="main">
+    <a href="#" class="btn">OUVIR AS MÚSICAS →</a>
+    <a href="https://open.spotify.com/intl-pt/artist/0NDTkAG2eBpLyDdVmYJuIs" class="btn">SPOTIFY</a>
+  </section>
+
+  <!-- YouTube Playlist -->
+  <iframe width="100%" height="350"
+    src="https://www.youtube.com/embed/videoseries?list=PLAwMNaah2is3xRG2p1bKp8U7eu_xy6D7r"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
   </iframe>
-   </div>
+
+  <!-- Músicas -->
   <h2>Meu filho e minha filha</h2>
   <audio controls>
     <source src="Meu filho e minha filha.mp3" type="audio/mpeg">
     Seu navegador não suporta o elemento de áudio.
   </audio>
+
   <h2>Celeiro de sonhador</h2>
   <audio controls>
     <source src="Guto Ramos Fernandes - CELEIRO DE SONHADOR - Remasterizada.m4a" type="audio/mpeg">
     Seu navegador não suporta o elemento de áudio.
   </audio>
-  <p></p>
-  <!-- Botão de inscrição do YouTube -->
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" 
-     data-channelid="UCwvHZVNbFUBwYUAE1zny_-g" 
-     data-layout="full" 
-     data-count="default"></div>
-  </head>
-  </body>
-<!-- Botão WhatsApp -->
-<a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
- </a>
-  
-  <p>___________________________________________</p>
-  <p>Guttao 2026</p>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5541995721834" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    Conversar
+  </a>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/gutoramosfernandes">LinkedIn</a>
+      <a href="https://www.youtube.com/@Guttaomusic">YouTube</a>
+      <a href="https://www.facebook.com/guttaomusic">Facebook</a>
+      <a href="https://www.tiktok.com/@guttaomusic">TikTok</a>
+      <a href="mailto:guttaostarmaker@gmail.com">Gmail</a>
+    </div>
+    <p>Guttao 2026</p>
+  </footer>
 </body>
 </html>
