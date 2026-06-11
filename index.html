@@ -144,8 +144,17 @@ body {
   .social-links { flex-direction: column; gap: 10px; }
   .whatsapp-btn { width: 100%; text-align: center; }
   .main { flex-direction: column; align-items: center; }
-  
+
   .btn {
+    width: 100%;           /* ocupa toda a largura disponível */
+    max-width: 280px;      /* nunca passa disso */
+    padding: 12px 18px;    /* reduz o espaço interno */
+    font-size: 16px;       /* texto proporcional */
+    margin: 10px auto;     /* centraliza */
+    box-sizing: border-box;/* garante que padding não estoure */
+  }
+}
+    .btn {
     width: 75%;          /* reduz a largura */
     max-width: 280px;    /* nunca passa disso */
     padding: 12px 18px;  /* menos espaço interno */
