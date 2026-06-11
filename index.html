@@ -136,17 +136,15 @@ body {
   flex: 1 1 200px; /* ocupa largura mínima de 200px */
   text-align: center;
   margin: 5px;
-@media (max-width: 576px) {
-  body {
-    background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
-    color: #fff;
-  }
-  .guttao { font-size: 80px; }
-  .artista { font-size: 20px; }
-  .tagline { font-size: 18px; }
-  .main { flex-direction: column; align-items: center; }
-  .btn { width: 90%; margin: 10px 0; }
 }
+  @media (max-width: 576px) {
+  .guttao { font-size: 60px; }
+  .artista { font-size: 18px; }
+  .tagline { font-size: 16px; }
+  .social-links { flex-direction: column; gap: 10px; }
+  .whatsapp-btn { width: 100%; text-align: center; }
+  .main { flex-direction: column; align-items: center; }
+  .btn { width: 90%; text-align: center; }
   
   /* Fundo preto no celular */
   body {
@@ -179,9 +177,8 @@ btn {
       <a href="#"></a>
       <a href="#"></a>
     </nav>
-    <a href="https://www.guttao.com.br/?gtm_debug=1781037213844#" style="color:orange;">ADMIN</a>
-      </style>
-       </header>
+    <a href="#" style="color:orange;">ADMIN</a>
+  </header>
 <section class="hero">
   <div class="left-text">
     <p class="artista">ARTISTA</p>
@@ -243,18 +240,8 @@ btn {
 .whatsapp-btn:hover {
   background-color: #128C7E;   /* verde mais escuro no hover */
 }
-    <a href="#" onclick="pedirSenha()">ADMIN</a>
-
-<script>
-function pedirSenha() {
-  const senha = prompt("Digite a senha para acessar:");
-  if (senha === "guttao2026") {
-    window.location.href = "https://www.guttao.com.br/?gtm_debug=1781037213844#"; 
-  } else {
-    alert("Senha incorreta!");
-}
-</script>
-    </head>
+  </style>
+</head>
   </body>
        <!-- Playlist do YouTube -->
 <iframe width="100%" height="356"
