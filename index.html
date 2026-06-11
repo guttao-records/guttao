@@ -86,7 +86,11 @@
 .tagline {
   font-size: 22px;
 }
-
+/* Desktop padrão */
+body {
+  background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
+  color: #fff;
+}
 /* Ajuste para tablets */
 @media (max-width: 992px) {
   .guttao {
@@ -100,11 +104,13 @@
   }
 }
 
-/* Ajuste para celulares */
+    /* Ajuste para celular */
 @media (max-width: 576px) {
-  .guttao {
-    font-size: 60px;   /* título menor para caber */
+  body {
+    background-color: #000;   /* preto sólido */
+    background-image: none;   /* remove gradiente */
   }
+}
   .artista {
     font-size: 18px;
   }
