@@ -180,6 +180,17 @@ btn {
       <a href="#"></a>
     </nav>
     <a href="#" style="color:orange;">ADMIN</a>
+      </style>
+    <a href="#" onclick="pedirSenha()">ADMIN</a>
+
+<script>
+function pedirSenha() {
+  const senha = prompt("Digite a senha para acessar:");
+  if (senha === "guttao2026") {
+    window.location.href = "https://www.guttao.com.br/?gtm_debug=1781037213844#"; 
+  } else {
+    alert("Senha incorreta!");
+  }
   </header>
 <section class="hero">
   <div class="left-text">
@@ -242,17 +253,6 @@ btn {
 .whatsapp-btn:hover {
   background-color: #128C7E;   /* verde mais escuro no hover */
 }
-  </style>
-    <a href="#" onclick="pedirSenha()">ADMIN</a>
-
-<script>
-function pedirSenha() {
-  const senha = prompt("Digite a senha para acessar:");
-  if (senha === "guttao2026") {
-    window.location.href = "https://www.guttao.com.br/?gtm_debug=1781037213844#"; 
-  } else {
-    alert("Senha incorreta!");
-  }
 }
 </script>
 </head>
