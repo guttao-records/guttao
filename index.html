@@ -243,6 +243,18 @@ btn {
   background-color: #128C7E;   /* verde mais escuro no hover */
 }
   </style>
+    <a href="#" onclick="pedirSenha()">ADMIN</a>
+
+<script>
+function pedirSenha() {
+  const senha = prompt("Digite a senha para acessar:");
+  if (senha === "guttao2026") {
+    window.location.href = "https://www.seusiteprivado.com"; 
+  } else {
+    alert("Senha incorreta!");
+  }
+}
+</script>
 </head>
   </body>
        <!-- Playlist do YouTube -->
