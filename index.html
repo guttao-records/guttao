@@ -145,6 +145,16 @@ body {
   .social-links { flex-direction: column; gap: 10px; }
   .whatsapp-btn { width: 100%; text-align: center; }
   .main { flex-direction: column; align-items: center; }
+  .Conexões_Sociais {
+    flex-direction: column;   /* empilha os links */
+    gap: 15px;
+    text-align: center;
+  }
+
+  .Conexões_Sociais a {
+    font-size: 24px;          /* ainda maior no mobile */
+    margin: 8px 0;
+  }
 
   .btn {
   display: inline-block;   /* não ocupa linha inteira */
@@ -217,17 +227,25 @@ btn {
       padding: 20px;
       text-align: center;
     }
+.Conexões_Sociais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;       /* permite quebrar linha se precisar */
+  gap: 20px;             /* espaço entre os links */
+  padding: 20px 0;       /* mais respiro vertical */
+}
+
 .Conexões_Sociais a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;       /* mais espaço lateral */
   font-weight: bold;
-  font-size: 18px;      /* aumenta o tamanho das letras */
+  font-size: 22px;       /* letras bem maiores */
+  margin: 0 12px;
 }
 
 .Conexões_Sociais a:hover {
   color: orange;
-}
+  transform: scale(
     }
     css
 .whatsapp-btn {
