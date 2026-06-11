@@ -146,12 +146,13 @@ body {
   .main { flex-direction: column; align-items: center; }
 
   .btn {
-    width: auto;           /* botão se ajusta ao conteúdo */
-    max-width: 200px;      /* limite máximo menor */
-    padding: 8px 14px;     /* menos espaço interno */
-    font-size: 14px;       /* texto proporcional */
-    margin: 8px auto;      /* centraliza */
-    border-radius: 6px;    /* arredondado mais elegante */
+    display: inline-block;   /* evita ocupar linha inteira */
+    width: auto;             /* ajusta ao texto */
+    max-width: 180px;        /* limite máximo menor */
+    padding: 8px 12px;       /* altura compacta */
+    font-size: 14px;         /* texto proporcional */
+    margin: 6px auto;        /* centraliza */
+    border-radius: 6px;      /* arredondado elegante */
   }
 }
     /* Fundo preto no celular */
