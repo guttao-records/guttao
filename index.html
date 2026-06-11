@@ -177,7 +177,7 @@ btn {
       <a href="#"></a>
       <a href="#"></a>
     </nav>
-    <a href="#" style="color:orange;">ADMIN</a>
+   <a href="#" onclick="pedirSenha()" style="color:orange;">ADMIN</a>
   </header>
 <section class="hero">
   <div class="left-text">
@@ -265,5 +265,17 @@ btn {
  </a>
     <p>___________________________________________</p>
   <p>Guttao 2026</p>
+  <script>
+function pedirSenha() {
+  const senha = prompt("Digite a senha para acessar:");
+  if (senha === "guttao2026") {
+    window.location.href = "https://www.seusiteprivado.com"; 
+  } else {
+    alert("Senha incorreta!");
+  }
+}
+</script>
+</body>
+</html>
 </body>
 </html>
