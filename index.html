@@ -227,15 +227,26 @@ btn {
       padding: 20px;
       text-align: center;
     }
+.Conexões_Sociais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;       /* quebra linha se precisar */
+  gap: 30px;             /* espaço bem maior entre links */
+  padding: 30px 0;       /* aumenta a altura da barra */
+  background-color: #000;/* mantém fundo preto elegante */
+}
+
 .Conexões_Sociais a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;       /* mais espaço lateral */
-  font-weight: bold;
-  }
+  font-weight: 700;      /* negrito forte */
+  font-size: 28px;       /* letras grandes */
+  margin: 0 20px;
+}
 
 .Conexões_Sociais a:hover {
   color: orange;
+  transform: scale(1.15); /* efeito de aumento ao passar o mouse */
 }
     css
 .whatsapp-btn {
