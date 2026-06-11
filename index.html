@@ -136,15 +136,17 @@ body {
   flex: 1 1 200px; /* ocupa largura mínima de 200px */
   text-align: center;
   margin: 5px;
-}
-  @media (max-width: 576px) {
-  .guttao { font-size: 60px; }
-  .artista { font-size: 18px; }
-  .tagline { font-size: 16px; }
-  .social-links { flex-direction: column; gap: 10px; }
-  .whatsapp-btn { width: 100%; text-align: center; }
+@media (max-width: 576px) {
+  body {
+    background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
+    color: #fff;
+  }
+  .guttao { font-size: 80px; }
+  .artista { font-size: 20px; }
+  .tagline { font-size: 18px; }
   .main { flex-direction: column; align-items: center; }
-  .btn { width: 90%; text-align: center; }
+  .btn { width: 90%; margin: 10px 0; }
+}
   
   /* Fundo preto no celular */
   body {
