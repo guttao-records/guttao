@@ -187,6 +187,27 @@ body {
   background-color: #555;   /* continua cinza */
   color: #fff;            /* texto muda pra branco */
 }
+      /* Ajuste para celular: copia o estilo do desktop */
+    @media (max-width: 576px) {
+      body {
+        background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
+        color: #fff;
+      }
+
+      .guttao { font-size: 140px; }
+      .artista { font-size: 28px; }
+      .tagline { font-size: 22px; }
+
+      .main {
+        flex-direction: row;   /* mantém lado a lado */
+        justify-content: center;
+      }
+
+      .btn {
+        width: auto;           /* igual ao desktop */
+        font-size: 16px;
+        padding: 15px 30px;
+      }
        </style>
 </head>
 <body>
