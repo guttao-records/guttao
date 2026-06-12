@@ -215,12 +215,13 @@ body {
   margin: 5px;
 }
   }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .guttao {
-    font-size: 45px;   /* reduz só no celular */
+    font-size: 42px;   /* reduz só no celular */
     line-height: 1.2;  /* melhora proporção vertical */
     margin: 20px 0;    /* dá respiro */
-    text-align: center}
+    text-align: center;
+    word-break: break-word; /* evita estourar a tela */}
   .artista { font-size: 18px; }
   .tagline { font-size: 16px; }
   .social-links { flex-direction: column; gap: 10px; }
