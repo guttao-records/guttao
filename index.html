@@ -186,25 +186,23 @@ body {
 .btn-ouvir:hover {
   background-color: #555;   /* continua cinza */
   color: #fff;            /* texto muda pra branco */
-}
-   /* estilo normal */
-.spotify-btn {
-  background-color: orange;   /* cor de fundo padrão */
-  color: black;               /* cor do texto */
-  font-size: 16px;            /* tamanho da fonte */
-  font-weight: bold;          /* deixa o texto forte */
-  padding: 12px 24px;         /* mantém proporção */
+}#spotify {
+  background-color: orange;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;         /* cantos arredondados */
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;  /* animação suave */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* efeito hover */
-.spotify-btn:hover {
-  background-color: white;    /* fundo branco */
-  color: orange;              /* texto laranja para contraste */
-} 
+#spotify:hover {
+  background-color: white;   /* fundo branco */
+  color: orange;             /* texto laranja */
+  border: 2px solid orange;  /* borda para manter o destaque */
+}
    </style>
 </head>
 <body>
@@ -229,7 +227,7 @@ body {
      <a href="#" class="btn">OUVIR AS MÚSICAS →</a>
        </div>
     <a href="https://open.spotify.com/intl-pt/artist/0NDTkAG2eBpLyDdYmYJu1s?si=VotISo-aTyOQ1XY2vfe09Q" class="btn">SPOTIFY</a>
-       <button class="spotify-btn">SPOTIFY</button>
+       <button id="spotify">SPOTIFY</button>
   </section>
 <footer>
   <div class="Conexões_Sociais">
