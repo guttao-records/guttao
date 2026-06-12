@@ -204,13 +204,12 @@ body {
         font-size: 16px;
         padding: 15px 30px;
       }
-@media (max-width: 576px) {
-  .guttao {
-    font-size: 65px;   /* tamanho proporcional no mobile */
-    line-height: 1.1;  /* melhora espaçamento vertical */
-    margin: 20px 0;    /* dá respiro sem esmagar */
-    text-align: center;/* garante centralização */
-  }
+.guttao {
+  font-size: clamp(60px, 12vw, 140px);
+  line-height: 1.1;
+  margin: 30px 0;
+  font-weight: bold;
+  text-align: center;
 }
       </style>
 </head>
