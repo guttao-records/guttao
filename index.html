@@ -104,89 +104,107 @@ body {
   }
 }
 
-    /* Ajuste para celular */
-@media (max-width: 576px) {
-  body {
-    background-color: #000;   /* preto sólido */
-    background-image: none;   /* remove gradiente */
-  }
-}
-  .artista {
-    font-size: 18px;
-  }
-  .tagline {
-    font-size: 16px;
-  }
-  .social-links {
-    flex-direction: column; /* links em coluna no celular */
-    gap: 10px;
-  }
-  .whatsapp-btn {
-    width: 100%;            /* botão ocupa largura inteira */
-    text-align: center;
-  }
-  .main {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* permite quebrar linha */
-}
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
+      color: #fff;
+      text-align: center;
+    }
 
-.btn {
-  flex: 1 1 200px; /* ocupa largura mínima de 200px */
-  text-align: center;
-  margin: 5px;
-}
-  }
-@media (max-width: 576px) {
-  .guttao { font-size: 60px; }
-  .artista { font-size: 18px; }
-  .tagline { font-size: 16px; }
-  .social-links { flex-direction: column; gap: 10px; }
-  .whatsapp-btn { width: 100%; text-align: center; }
-  .main { flex-direction: column; align-items: center; }
-  .Conexões_Sociais {
-    flex-direction: column;   /* empilha os links */
-    gap: 15px;
-    text-align: center;
-  }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #000;
+    }
 
-  .Conexões_Sociais a {
-    font-size: 24px;          /* ainda maior no mobile */
-    margin: 8px 0;
-  }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  .btn {
-  display: inline-block;   /* não ocupa linha inteira */
-  width: auto;             /* ajusta ao conteúdo */
-  max-width: 220px;        /* limite máximo */
-  padding: 10px 16px;      /* altura compacta */
-  font-size: 15px;         /* texto proporcional */
-  margin: 8px;             /* espaço entre botões */
-  border-radius: 6px;      /* arredondado elegante */
-}
-}
-    /* Fundo preto no celular */
-  body {
-    background-color: #000;
-    background-image: #fff;
-  }
-.btn-ouvir {
-  display: inline-block;
-  background-color: #555;   /* cinza fixo */
-  color: #fff;              /* texto branco padrão */
-  padding: 12px 24px;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #000;
+    }
 
-.btn-ouvir:hover {
-  background-color: #555;   /* continua cinza */
-  color: #fff;            /* texto muda pra branco */
-}
+    .artista {
+      color: orange;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .guttao {
+      color: white;
+      font-size: 140px;
+      margin: 50px 0;
+      font-weight: bold;
+    }
+
+    .tagline {
+      color: #ccc;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .btn {
+      background-color: orange;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: orange;
+      border: 2px solid orange;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #000;
+      font-size: 14px;
+    }
+
+    /* Ajuste para celular: força layout igual ao desktop */
+    @media (max-width: 576px) {
+      body {
+        background: radial-gradient(circle at center, rgba(255,255,0,0.2), #000);
+        color: #fff;
+      }
+
+      .guttao { font-size: 140px; }
+      .artista { font-size: 28px; }
+      .tagline { font-size: 22px; }
+
+      .main {
+        flex-direction: row;   /* mantém botões lado a lado */
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .btn {
+        width: auto;           /* igual ao desktop */
+        font-size: 16px;
+        padding: 15px 30px;
+      }
+    }
              </style>
 </head>
 <body>
