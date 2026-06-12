@@ -187,10 +187,19 @@ body {
   background-color: #555;   /* continua cinza */
   color: #fff;            /* texto muda pra branco */
 }
-    .btn-spotify:hover {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
+  /* Ajuste para celular */
+@media (max-width: 576px) {
+  .main {
+    flex-direction: column;   /* empilha os botões */
+    align-items: center;      /* centraliza */
+  }
+
+  .btn {
+    width: 90%;               /* ocupa quase toda a largura */
+    max-width: 300px;         /* limite para não ficar gigante */
+    font-size: 16px;          /* texto proporcional */
+    padding: 12px 20px;       /* altura compacta */
+  }
 }
       </style>
 </head>
