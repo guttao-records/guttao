@@ -216,7 +216,11 @@ body {
 }
   }
 @media (max-width: 576px) {
-  .guttao { font-size: 10px; }
+  .guttao {
+    font-size: 45px;   /* reduz só no celular */
+    line-height: 1.2;  /* melhora proporção vertical */
+    margin: 20px 0;    /* dá respiro */
+    text-align: center}
   .artista { font-size: 18px; }
   .tagline { font-size: 16px; }
   .social-links { flex-direction: column; gap: 10px; }
