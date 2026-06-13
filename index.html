@@ -211,19 +211,26 @@ body {
   text-align: center;
   margin: 5px;
 }
-    * Ajuste para telas menores que 768px */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
-  .menu {
+  @media (max-width: 768px) {
+  /* Logo GUTTAO */
+  .logo {
+    max-width: 80%;   /* limita o tamanho */
+    height: auto;
+    margin: 0 auto;   /* centraliza */
     display: block;
-    margin: 10px 0;
+  }
+
+  /* Vídeo YouTube */
+  iframe {
+    width: 100%;      /* ocupa toda a largura da tela */
+    height: auto;     /* ajusta altura proporcional */
+  }
+
+  /* Título Arte & IA */
+  h2 {
+    font-size: 20px;  /* reduz tamanho da fonte */
+    text-align: center;
+    line-height: 1.2;
   }
 }
   }
